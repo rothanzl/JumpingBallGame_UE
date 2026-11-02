@@ -3,6 +3,11 @@ Binaries/
 Intermediate/
 Saved/
 DerivedDataCache/
+# Build/ holds engine-default Info.Template.plist, entitlements and (on Windows)
+# the app icon. All regenerated today, so ignoring is safe. Once an icon or
+# plist is customized for a release build, un-ignore those paths:
+#   !Build/Mac/Resources/
+#   !Build/Windows/Resources/
 Build/
 
 # IDE / editor files
@@ -13,6 +18,7 @@ Build/
 *.xcodeproj/
 *.code-workspace
 .vscode/
+*.DotSettings.user
 
 # OS files
 .DS_Store
